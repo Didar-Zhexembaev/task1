@@ -1,0 +1,23 @@
+{
+    "name": "testtasks/1",
+    "authors": [
+        {
+            "name": "Didar Zhexembaev",
+            "email": "didar_15_1998@mail.ru"
+        }
+    ],
+    "require": {
+        "nette/database": "^3.1",
+        "symfony/validator": "^5.4",
+        "symfony/routing": "^5.4",
+        "symfony/http-foundation": "^5.4",
+        "symfony/config": "^5.4",
+        "symfony/yaml": "^5.4",
+        "symfony/http-kernel": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "Controllers"
+        }
+    }
+}

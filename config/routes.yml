@@ -1,0 +1,12 @@
+get:
+  path: /
+  controller: Controllers\RestController::get
+  methods: GET
+post:
+  path: /
+  controller: Controllers\RestController::post
+  methods: POST
+test:
+  path: /test
+  controller: Controllers\RestController::test
+  methods: GET

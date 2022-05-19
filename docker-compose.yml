@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  php_apache:
+    build: .
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 80:80
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=task_one_root_pwd
+    volumes:
+      - ./mysql:/var/lib/mysql
+      - ./database.sql:/docker-entrypoint-initdb.d/database.sql
